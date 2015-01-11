@@ -1,4 +1,5 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, session, redirect, url_for, escape, request, render_template
+from flask import *
+import views
 
-import uva.views
+app = Flask(__name__)
